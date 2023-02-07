@@ -1,19 +1,11 @@
 import Navbar from "../components/Navbar";
-import video from "../videos/video.mp4";
+import MainSection from "../components/MainSection";
 
 function Home() {
-  console.log(video);
   return (
     <>
       <Navbar />
-      <video
-        autoPlay
-        loop
-        muted
-        src={video}
-        width="750"
-        height="500"
-        controls></video>
+      <MainSection />
     </>
   );
 }

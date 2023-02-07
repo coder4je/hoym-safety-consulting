@@ -1,4 +1,3 @@
-import React from "react";
 import styled from "styled-components";
 import { Link as LinkR } from "react-router-dom";
 import { Link as LinkS } from "react-scroll";
@@ -61,7 +60,6 @@ export const NavMenu = styled.ul`
   align-items: center;
   list-style: none;
   text-align: center;
-  margin-right: -22px;
 
   @media screen and (max-width: 768px) {
     display: none;
