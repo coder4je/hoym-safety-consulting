@@ -1,15 +1,18 @@
 import {
   MainContainer,
   MainContent,
-  MainBtnWrapper,
+  MainBg,
   MainH1,
   MainP,
 } from "./MainElements";
-import { Button } from "../ButtonElements";
+import hardhat from "../../images/hardhat.jpeg";
 
 function MainSection() {
   return (
     <MainContainer>
+      <MainBg>
+        <img src={hardhat} alt="hardhat" />
+      </MainBg>
       <MainContent>
         <MainH1>IMPROVE HEALTH AND SAFETY IN YOUR WORKPLACE</MainH1>
         <MainP>
@@ -18,9 +21,6 @@ function MainSection() {
           productivity while complying with federal, state, and local regulatory
           guidelines.
         </MainP>
-        <MainBtnWrapper>
-          <Button to="/">Get Started</Button>
-        </MainBtnWrapper>
       </MainContent>
     </MainContainer>
   );
