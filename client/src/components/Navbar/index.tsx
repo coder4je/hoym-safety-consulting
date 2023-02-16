@@ -9,6 +9,7 @@ import {
   NavItem,
   NavLinks,
   MobileIcon,
+  NavLogoImage,
 } from "./NavbarElements";
 
 const Navbar = () => {
@@ -17,7 +18,7 @@ const Navbar = () => {
       <Nav>
         <NavbarContainer>
           <NavLogo to="/">
-            <img src={logo} alt="logo" width={200} />
+            <NavLogoImage src={logo} alt="logo" />
           </NavLogo>
           <MobileIcon>
             <FaBars />

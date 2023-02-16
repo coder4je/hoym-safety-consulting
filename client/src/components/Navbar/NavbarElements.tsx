@@ -18,28 +18,35 @@ export const Nav = styled.nav`
   @media screen and (max-width: 960px) {
     transition: 0.8s all ease;
   }
+  @media screen and (min-width: 1200px) {
+    transition: 0.8s all ease;
+    font-size: 1.2rem;
+  }
 `;
 
 export const NavbarContainer = styled.div`
   display: flex;
   justify-content: space-between;
+  align-items: center;
+
   height: 80px;
   z-index: 1;
   width: 100%;
   padding: 0 24px;
-  max-width: 1100px;
+  max-width: 1200px;
 `;
 
 export const NavLogo = styled(LinkR)`
-  color: #fff;
-  justify-self: flex-start;
-  font-size: 0.5 px;
   cursor: pointer;
-  display: flex;
-  align-items: center;
-  left: 0;
-  font-weight: bold;
-  text-decoration: none;
+`;
+
+export const NavLogoImage = styled.img`
+  width: 250px;
+
+  @media screen and (min-width: 1200px) {
+    transition: 0.8s all ease;
+    width: 280px;
+  }
 `;
 
 export const NavLogoIcon = styled(LinkR)``;

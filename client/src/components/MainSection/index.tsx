@@ -1,18 +1,16 @@
 import {
   MainContainer,
   MainContent,
-  MainBg,
   MainH1,
   MainP,
+  MainBg,
 } from "./MainElements";
 import hardhat from "../../images/hardhat.jpeg";
 
 function MainSection() {
   return (
     <MainContainer>
-      <MainBg>
-        <img src={hardhat} alt="hardhat" />
-      </MainBg>
+      <MainBg src={hardhat} alt="hardhat" />
       <MainContent>
         <MainH1>IMPROVE HEALTH AND SAFETY IN YOUR WORKPLACE</MainH1>
         <MainP>

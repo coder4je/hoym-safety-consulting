@@ -5,21 +5,19 @@ export const MainContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 800px;
+  min-height: 800px;
 `;
 
-export const MainBg = styled.div`
-  display: flex;
-  justify-content: flex-end;
-  opacity: 0.1;
-  height: 100%;
-  max-width: 100%;
+export const MainBg = styled.img`
+  display: block;
+  opacity: 0.2;
+  width: 100%;
 `;
 
 export const MainContent = styled.div`
   max-width: 1200px;
   position: absolute;
-  padding: 8px 24px;
+  padding: 8px 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
