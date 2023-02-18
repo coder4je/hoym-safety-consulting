@@ -1,22 +1,23 @@
 import styled from "styled-components";
 
 export const MainContainer = styled.div`
-  background: #111214;
-  display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 800px;
 `;
 
 export const MainBg = styled.img`
   display: block;
-  opacity: 0.2;
   width: 100%;
+  // margin: 0;
+  // padding: 0;
+  // background-repeat: no-repeat;
+  // background-attachment: fixed;
+  // background-position: center center;
+  // background-size: cover;
 `;
 
 export const MainContent = styled.div`
-  max-width: 1200px;
-  position: absolute;
+  // position: absolute;
   padding: 8px 20px;
   display: flex;
   flex-direction: column;

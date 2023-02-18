@@ -5,13 +5,13 @@ import {
   MainP,
   MainBg,
 } from "./MainElements";
-import hardhat from "../../images/hardhat.jpeg";
+import sunset from "../../images/sunset.avif";
 
 function MainSection() {
   return (
     <MainContainer>
-      <MainBg src={hardhat} alt="hardhat" />
       <MainContent>
+        <MainBg src={sunset} alt="sunset" />
         <MainH1>IMPROVE HEALTH AND SAFETY IN YOUR WORKPLACE</MainH1>
         <MainP>
           Construction sites are full of potential dangers, not just for workers

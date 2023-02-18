@@ -1,13 +1,13 @@
 import Navbar from "../components/Navbar";
 import MainSection from "../components/MainSection";
-import StaffingSection from "../components/StaffingSection";
+import MenuSection from "../components/MenuSection";
 
 function Home() {
   return (
     <>
       <Navbar />
       <MainSection />
-      <StaffingSection />
+      <MenuSection />
       {/* <ProjectManagementSection /> */}
     </>
   );
