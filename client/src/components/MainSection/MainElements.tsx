@@ -1,47 +1,28 @@
 import styled from "styled-components";
 
-export const MainContainer = styled.div`
-  justify-content: center;
-  align-items: center;
-`;
+export const MainContainer = styled.div``;
 
 export const MainBg = styled.img`
   display: block;
   width: 100%;
-  // margin: 0;
-  // padding: 0;
-  // background-repeat: no-repeat;
-  // background-attachment: fixed;
-  // background-position: center center;
-  // background-size: cover;
 `;
 
 export const MainContent = styled.div`
-  // position: absolute;
-  padding: 8px 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
 `;
 export const MainH1 = styled.div`
   color: #fff;
-  font-size: 60px;
+  font-size: clamp(1.8rem, 5vw, 10rem);
   text-align: center;
   padding: 10%;
-  background-color: linear-gradient(grey, darkgrey);
   font-family: "Permanent Marker", cursive;
-
-  @media screen and (max-width: 768px) {
-    font-size: 40px;
-  }
-
-  @media screen and (max-width: 480) {
-    font-size: 32px;
-  }
 `;
 export const MainP = styled.div`
   color: #fff;
-  font-size: 24px;
+  line-height: 1.8;
+  font-size: max(1rem, 1.2vw);
   margin: 0 10%;
   text-align: center;
   font-family: "Poppins", sans-serif;
