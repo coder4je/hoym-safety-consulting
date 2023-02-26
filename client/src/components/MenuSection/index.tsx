@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import StaffingService from "../StaffingService";
 import {
   MenuToggleContainer,
@@ -26,17 +26,18 @@ const MenuSection: React.FC = () => {
   function handleToggle() {
     setRotate(!rotate);
   }
+
   return (
     <MenuContainer>
       <MenuToggleContainer>
         <MenuToggle onClick={handleToggle}>
-          <MenuPlus rotate={rotate} className="material-symbols-outlined">
+          <MenuPlus toggle={rotate} className="material-symbols-outlined">
             add
           </MenuPlus>
         </MenuToggle>
       </MenuToggleContainer>
       <Menu style={{ transform: scaleMenu }}>
-        <MenuItems to="/services/staffing" style={{ transform: showItemOne }}>
+        <MenuItems to="/staffing" style={{ transform: showItemOne }}>
           <MenuItem>
             <MenuItemIcon className="material-symbols-outlined">
               Person_add

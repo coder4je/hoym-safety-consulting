@@ -22,8 +22,8 @@ export const MainH1 = styled.div`
 export const MainP = styled.div`
   color: #fff;
   line-height: 1.8;
-  font-size: max(1rem, 1.2vw);
+  font-size: max(1.5rem, 1.2vw);
   margin: 0 10%;
   text-align: center;
-  font-family: "Poppins", sans-serif;
+  font-family: "M PLUS Rounded 1c", sans-serif;
 `;

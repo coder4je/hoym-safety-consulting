@@ -2,7 +2,7 @@ import styled, { css } from "styled-components";
 import { Link } from "react-router-dom";
 
 interface Props {
-  rotate?: boolean;
+  toggle?: boolean;
 }
 
 export const DefaultContainer = css`
@@ -57,7 +57,7 @@ export const MenuPlus = styled.span<Props>`
   right: 0.625rem;
   background-color: transparent;
   transition: 1s;
-  transform: ${({ rotate }) => (rotate ? "rotate(45deg)" : "rotate(0)")};
+  transform: ${({ toggle }) => (toggle ? "rotate(45deg)" : "rotate(0)")};
 `;
 
 export const Menu = styled.div`
