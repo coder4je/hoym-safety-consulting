@@ -37,11 +37,21 @@ function StaffingService() {
       <StaffingList>
         <StaffingListTitle>Hoym Safety Provide:</StaffingListTitle>
         <StaffingListCards>
-          <StaffingListCard>Construction Superintendent</StaffingListCard>
-          <StaffingListCard>Site Safety Manager</StaffingListCard>
-          <StaffingListCard>Site Safety Coordinator</StaffingListCard>
-          <StaffingListCard>Concete Site Safety Manager</StaffingListCard>
-          <StaffingListCard>Fire Site Safety Manager</StaffingListCard>
+          <StaffingListCard to="../contact">
+            Construction Superintendent
+          </StaffingListCard>
+          <StaffingListCard to="../contact">
+            Site Safety Manager
+          </StaffingListCard>
+          <StaffingListCard to="../contact">
+            Site Safety Coordinator
+          </StaffingListCard>
+          <StaffingListCard to="../contact">
+            Concete Site Safety Manager
+          </StaffingListCard>
+          <StaffingListCard to="../contact">
+            Fire Site Safety Manager
+          </StaffingListCard>
         </StaffingListCards>
       </StaffingList>
     </StaffingContainer>

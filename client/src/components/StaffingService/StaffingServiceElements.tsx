@@ -1,4 +1,6 @@
 import styled from "styled-components";
+import "../../App.css";
+import { Link } from "react-router-dom";
 
 export const StaffingContainer = styled.div``;
 
@@ -62,7 +64,7 @@ export const StaffingListCards = styled.div`
   flex-wrap: wrap;
   justify-content: space-between;
 `;
-export const StaffingListCard = styled.div`
+export const StaffingListCard = styled(Link)`
   font-size: clamp(1rem, 5vw, 1.5rem);
   height: 10rem;
   color: black;
@@ -79,6 +81,6 @@ export const StaffingListCard = styled.div`
 
   &:hover {
     border-color: #febb26;
-    color: #febb26;
+    color: var(--color-background);
   }
 `;
