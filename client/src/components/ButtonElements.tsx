@@ -10,7 +10,7 @@ interface Props {
 
 export const Button = styled.button<Props>`
   border-radius: 10px;
-  background: ${({ primary }) => (primary ? "#01BF71" : "#010606")};
+  background: ${({ primary }) => (primary ? "#febb26" : "#010606")};
   white-apce: nowrap;
   padding: ${({ big }) => (big ? "14px 48px" : "12px 30px")};
   color: ${({ dark }) => (dark ? "#010606" : "#fff")};
@@ -25,6 +25,6 @@ export const Button = styled.button<Props>`
 
   &:hover {
     transition: all 0.2s ease-in-out;
-    background: ${({ primary }) => (primary ? "#fff" : "#01BF71")};
+    background: ${({ primary }) => (primary ? "#fff" : "#febb26")};
   }
 `;

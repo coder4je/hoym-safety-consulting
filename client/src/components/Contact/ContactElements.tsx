@@ -2,8 +2,8 @@ import styled from "styled-components";
 
 export const Form = styled.form`
   width: 100%;
-  height: 100%;
-  background: white;
+  height: 50vh;
+  background: #f5f5f5;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -27,9 +27,10 @@ export const ContactLabel = styled.label`
 
 export const ContactInput = styled.input`
   width: 30rem;
+  height: 2.5rem;
   margin: 1rem;
   background: #f9f9f9;
-  border: 0.1rem solid #eeeeee;
+  border: 0.1rem solid #dfdfdf;
 `;
 
 export const ContactMessage = styled.textarea`
@@ -37,15 +38,13 @@ export const ContactMessage = styled.textarea`
   height: 5rem;
   margin: 1rem;
   background: #f9f9f9;
-  border: 0.1rem solid #eeeeee;
+  border: 0.1rem solid #dfdfdf;
 `;
 
 export const ContactBg = styled.img`
+  margin-top: -5rem;
   margin-bottom: -5px;
   width: 100%;
-  max-height: 500px;
-`;
-
-export const SubmitButton = styled.button`
-  background: skyblue;
+  height: 50vh;
+  object-fit: cover;
 `;

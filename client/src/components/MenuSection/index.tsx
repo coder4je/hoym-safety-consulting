@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import StaffingService from "../StaffingService";
 import {
   MenuToggleContainer,
   MenuToggle,
@@ -15,14 +14,6 @@ import {
 const MenuSection: React.FC = () => {
   const [rotate, setRotate] = useState<boolean>(false);
 
-  const showItemOne = rotate ? "translateY(-160px)" : "translateY(0)";
-  const showItemTwo = rotate ? "translate(140px, -80px)" : "translateY(0)";
-  const showItemThree = rotate ? "translate(140px, 80px)" : "translateY(0)";
-  const showItemFour = rotate ? "translateY(160px)" : "translateY(0)";
-  const showItemFive = rotate ? "translate(-140px, 80px)" : "translateY(0)";
-  const showItemSix = rotate ? "translate(-140px, -80px)" : "translateY(0)";
-  const scaleMenu = rotate ? "scale(1)" : "scale(0.9)";
-
   function handleToggle() {
     setRotate(!rotate);
   }
@@ -36,8 +27,8 @@ const MenuSection: React.FC = () => {
           </MenuPlus>
         </MenuToggle>
       </MenuToggleContainer>
-      <Menu style={{ transform: scaleMenu }}>
-        <MenuItems to="/staffing" style={{ transform: showItemOne }}>
+      <Menu toggle={rotate}>
+        <MenuItems to="/staffing" className="showItemOne" toggle={rotate}>
           <MenuItem>
             <MenuItemIcon className="material-symbols-outlined">
               Person_add
@@ -45,14 +36,20 @@ const MenuSection: React.FC = () => {
             <MenuItemText>STAFFING</MenuItemText>
           </MenuItem>
         </MenuItems>
-        <MenuItems to="/services/training" style={{ transform: showItemTwo }}>
+        <MenuItems
+          to="/services/training"
+          className="showItemTwo"
+          toggle={rotate}>
           <MenuItem>
             <MenuItemIcon className="material-symbols-outlined">
               Person_add
             </MenuItemIcon>
           </MenuItem>
         </MenuItems>
-        <MenuItems to="/services/drawing" style={{ transform: showItemThree }}>
+        <MenuItems
+          to="/services/drawing"
+          className="showItemThree"
+          toggle={rotate}>
           <MenuItem>
             <MenuItemIcon className="material-symbols-outlined">
               Person_add
@@ -61,7 +58,8 @@ const MenuSection: React.FC = () => {
         </MenuItems>
         <MenuItems
           to="/services/inspection"
-          style={{ transform: showItemFour }}>
+          className="showItemFour"
+          toggle={rotate}>
           <MenuItem>
             <MenuItemIcon className="material-symbols-outlined">
               Person_add
@@ -70,14 +68,18 @@ const MenuSection: React.FC = () => {
         </MenuItems>
         <MenuItems
           to="/services/contracting"
-          style={{ transform: showItemFive }}>
+          className="showItemFive"
+          toggle={rotate}>
           <MenuItem>
             <MenuItemIcon className="material-symbols-outlined">
               Person_add
             </MenuItemIcon>
           </MenuItem>
         </MenuItems>
-        <MenuItems to="/services/management" style={{ transform: showItemSix }}>
+        <MenuItems
+          to="/services/management"
+          className="showItemSix"
+          toggle={rotate}>
           <MenuItem>
             <MenuItemIcon className="material-symbols-outlined">
               Person_add
