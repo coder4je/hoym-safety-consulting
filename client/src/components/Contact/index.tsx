@@ -1,5 +1,6 @@
 import React, { useState, ChangeEvent, FormEvent } from "react";
 import {
+  ContactContainer,
   Form,
   ContactBg,
   ContactTitle,
@@ -42,7 +43,7 @@ const Contact: React.FC = () => {
     // onSubmit(values);
   };
   return (
-    <>
+    <ContactContainer>
       <ContactBg src={contact} alt="contact" />
       <Form onSubmit={handleSubmit}>
         <ContactTitle>Contact Us</ContactTitle>
@@ -90,7 +91,7 @@ const Contact: React.FC = () => {
           Submit
         </Button>
       </Form>
-    </>
+    </ContactContainer>
   );
 };
 

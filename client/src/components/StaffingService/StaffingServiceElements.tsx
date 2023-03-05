@@ -74,13 +74,13 @@ export const StaffingListCard = styled(Link)`
   padding: 20px;
   margin-bottom: 5rem;
   transition: 0.3s;
-  border: 3px solid transparent;
-  border-color: darkgrey;
+  // border: 3px solid transparent;
   text-align: center;
   padding-top: 3rem;
+  text-decoration: none;
 
   &:hover {
-    border-color: #febb26;
-    color: var(--color-background);
+    transform: translateY(-5px);
+    box-shadow: 0px 5px 20px 2px #febb26;
   }
 `;

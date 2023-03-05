@@ -1,8 +1,10 @@
 import styled from "styled-components";
 
+export const ContactContainer = styled.div``;
+
 export const Form = styled.form`
   width: 100%;
-  height: 50vh;
+  height: 70vh;
   background: #f5f5f5;
   display: flex;
   flex-direction: column;
@@ -42,9 +44,8 @@ export const ContactMessage = styled.textarea`
 `;
 
 export const ContactBg = styled.img`
-  margin-top: -5rem;
   margin-bottom: -5px;
   width: 100%;
-  height: 50vh;
+  height: 30vh;
   object-fit: cover;
 `;

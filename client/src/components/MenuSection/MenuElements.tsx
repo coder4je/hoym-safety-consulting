@@ -63,7 +63,6 @@ export const MenuPlus = styled.span<Props>`
 export const Menu = styled.div<Props>`
   ${DefaultContainer}
   z-index: -1;
-  // transform: scale(0.9);
   transform: ${({ toggle }) => (toggle ? "scale(1)" : "scale(0.9)")};
 `;
 
@@ -76,6 +75,7 @@ export const MenuItems = styled(Link)<Props>`
   top: 0;
   position: absolute;
   transition: 1s;
+  text-decoration: none;
 
   &.showItemOne {
     transform: ${({ toggle }) =>
@@ -123,7 +123,8 @@ export const MenuItemIcon = styled.span`
   left: 0.625rem;
 `;
 
-export const MenuItemText = styled.div`
+export const MenuItemText = styled.span`
+  color: darkgrey;
   visibility: hidden;
   position: relative;
   top: -0.5rem;
@@ -139,7 +140,6 @@ export const MenuItem = styled.div`
       visibility: hidden;
     }
     ${MenuItemText} {
-      color: darkgrey;
       visibility: visible;
     }
   }

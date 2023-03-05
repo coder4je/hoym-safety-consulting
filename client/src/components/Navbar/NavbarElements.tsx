@@ -5,7 +5,7 @@ import { Link as LinkS } from "react-scroll";
 export const Nav = styled.nav`
   background: #000;
   width: 100%
-  height: 5rem;
+  height: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -67,21 +67,19 @@ export const NavMenu = styled.ul`
   }
 `;
 
-export const NavItem = styled.li`
-  height: 80px;
-`;
-
 export const NavLinks = styled(LinkR)`
   color: #fff;
+  width: 5rem;
   display: flex;
   align-items: center;
+  justify-content: center;
   text-decoration: none;
-  padding: 0 1rem;
+  margin: 0 1rem;
   height: 100%;
   cursor: pointer;
 
-  &.active {
-    border-bottom: 3px solid #01bf71;
+  &:hover {
+    text-decoration: underline 3px solid #febb26;
   }
 `;
 
@@ -95,3 +93,35 @@ export const NavBtn = styled.nav`
 `;
 
 export const NavBtnLink = styled(LinkR)``;
+
+export const DropMenu = styled.ul`
+  background: black;
+`;
+
+export const DropMenuItems = styled.div`
+
+  display: none;
+  position: absolute:
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+`;
+
+export const NavItem = styled.li`
+  height: 80px;
+
+  &.service:hover ${DropMenuItems} {
+    display: block;
+  }
+`;
+
+export const DropMenuLink = styled(LinkR)`
+  color: white;
+  padding: 16px 20px;
+  text-decoration: none;
+  display: block;
+
+  &:hover {
+    text-decoration: underline 3px solid #febb26;
+  }
+`;

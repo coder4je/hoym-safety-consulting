@@ -36,14 +36,12 @@ const MenuSection: React.FC = () => {
             <MenuItemText>STAFFING</MenuItemText>
           </MenuItem>
         </MenuItems>
-        <MenuItems
-          to="/services/training"
-          className="showItemTwo"
-          toggle={rotate}>
+        <MenuItems to="/ssp" className="showItemTwo" toggle={rotate}>
           <MenuItem>
             <MenuItemIcon className="material-symbols-outlined">
-              Person_add
+              chrome_reader_mode
             </MenuItemIcon>
+            <MenuItemText>SiteSafetyPlan</MenuItemText>
           </MenuItem>
         </MenuItems>
         <MenuItems
