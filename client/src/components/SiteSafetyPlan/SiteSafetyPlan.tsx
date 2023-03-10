@@ -1,5 +1,5 @@
-import React from "react";
-import plan from "../../images/plan.jpeg";
+import planning from "../../videos/planning.mp4";
+
 import {
   SSPContainer,
   SSPBg,
@@ -11,6 +11,10 @@ import {
   TitleStart,
   TitleContent,
   TitleEnd,
+} from "../StaffingService/StaffingServiceElements";
+import {
+  StaffingBg,
+  VideoBg,
 } from "../StaffingService/StaffingServiceElements";
 import { MainP } from "../MainSection/MainElements";
 import { Button } from "../ButtonElements";
@@ -25,7 +29,9 @@ function SiteSafetyPlan() {
 
   return (
     <SSPContainer>
-      <SSPBg src={plan} alt="plan" />
+      <StaffingBg>
+        <VideoBg autoPlay loop muted src={planning} />
+      </StaffingBg>
       <Title>
         <TitleStart className="slide-left"></TitleStart>
         <TitleContent>Site Safety Plan</TitleContent>

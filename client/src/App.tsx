@@ -6,6 +6,7 @@ import Contact from "./components/Contact";
 import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import SiteSafetyPlan from "./components/SiteSafetyPlan/SiteSafetyPlan";
+import Training from "./components/Training";
 
 const App: React.FC = () => {
   return (
@@ -17,7 +18,7 @@ const App: React.FC = () => {
         <Route path="contact" element={<Contact />} />
         <Route path="staffing" element={<StaffingService />} />
         <Route path="ssp" element={<SiteSafetyPlan />} />
-        <Route />
+        <Route path="training" element={<Training />} />
         <Route path="*" element={<NoMatch />} />
       </Routes>
     </>

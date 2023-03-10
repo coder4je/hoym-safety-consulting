@@ -128,6 +128,7 @@ export const MenuItemText = styled.span`
   visibility: hidden;
   position: relative;
   top: -0.5rem;
+  left: 0rem;
 `;
 
 export const MenuItem = styled.div`
