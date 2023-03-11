@@ -74,7 +74,6 @@ export const StaffingListCard = styled(Link)`
   padding: 20px;
   margin-bottom: 5rem;
   transition: 0.3s;
-  // border: 3px solid transparent;
   text-align: center;
   padding-top: 3rem;
   text-decoration: none;
@@ -82,5 +81,6 @@ export const StaffingListCard = styled(Link)`
   &:hover {
     transform: translateY(-5px);
     box-shadow: 0px 5px 20px 2px #febb26;
+    text-shadow: 1px 1px 1px #febb26;
   }
 `;

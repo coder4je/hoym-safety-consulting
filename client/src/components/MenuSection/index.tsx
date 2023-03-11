@@ -41,13 +41,13 @@ const MenuSection: React.FC = () => {
             <MenuItemIcon className="material-symbols-outlined">
               chrome_reader_mode
             </MenuItemIcon>
-            <MenuItemText>SiteSafetyPlan</MenuItemText>
+            <MenuItemText>SSP</MenuItemText>
           </MenuItem>
         </MenuItems>
         <MenuItems to="training" className="showItemThree" toggle={rotate}>
           <MenuItem>
             <MenuItemIcon className="material-symbols-outlined">
-              support_agent
+              clinical_notes
             </MenuItemIcon>
             <MenuItemText>Training</MenuItemText>
           </MenuItem>
@@ -58,8 +58,9 @@ const MenuSection: React.FC = () => {
           toggle={rotate}>
           <MenuItem>
             <MenuItemIcon className="material-symbols-outlined">
-              Person_add
+              Manage_search
             </MenuItemIcon>
+            <MenuItemText>Library</MenuItemText>
           </MenuItem>
         </MenuItems>
         <MenuItems
@@ -68,8 +69,9 @@ const MenuSection: React.FC = () => {
           toggle={rotate}>
           <MenuItem>
             <MenuItemIcon className="material-symbols-outlined">
-              Person_add
+              app_shortcut
             </MenuItemIcon>
+            <MenuItemText>My Account</MenuItemText>
           </MenuItem>
         </MenuItems>
         <MenuItems
@@ -78,8 +80,9 @@ const MenuSection: React.FC = () => {
           toggle={rotate}>
           <MenuItem>
             <MenuItemIcon className="material-symbols-outlined">
-              Person_add
+              support_agent
             </MenuItemIcon>
+            <MenuItemText>Contact Us</MenuItemText>
           </MenuItem>
         </MenuItems>
       </Menu>

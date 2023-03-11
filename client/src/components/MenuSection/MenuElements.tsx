@@ -128,7 +128,8 @@ export const MenuItemText = styled.span`
   visibility: hidden;
   position: relative;
   top: -0.5rem;
-  left: 0rem;
+  display: flex;
+  justify-content: center;
 `;
 
 export const MenuItem = styled.div`
