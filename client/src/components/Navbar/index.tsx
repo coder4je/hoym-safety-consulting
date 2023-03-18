@@ -15,7 +15,11 @@ import {
   DropMenuLink,
 } from "./NavbarElements";
 
-const Navbar = () => {
+interface NavbarProps {
+  toggle: (event: React.MouseEvent<HTMLDivElement>) => void;
+}
+
+const Navbar = (toggle: NavbarProps) => {
   return (
     <>
       <Nav>
@@ -23,7 +27,7 @@ const Navbar = () => {
           <NavLogo to="/">
             <NavLogoImage src={logo} alt="logo" />
           </NavLogo>
-          <MobileIcon>
+          <MobileIcon onClick={toggle.toggle}>
             <FaBars />
           </MobileIcon>
         </NavbarContainer>
@@ -32,7 +36,7 @@ const Navbar = () => {
             <NavLinks to="home">HOME</NavLinks>
           </NavItem>
           <NavItem className="service">
-            <NavLinks to="service">SERVICE</NavLinks>
+            <NavLinks to="home">SERVICE</NavLinks>
             <DropMenu>
               <DropMenuItems>
                 <DropMenuLink to="staffing">Staffing</DropMenuLink>

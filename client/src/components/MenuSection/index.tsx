@@ -12,7 +12,7 @@ import {
 } from "./MenuElements";
 
 const MenuSection: React.FC = () => {
-  const [rotate, setRotate] = useState<boolean>(false);
+  const [rotate, setRotate] = useState<boolean>();
 
   function handleToggle() {
     setRotate(!rotate);

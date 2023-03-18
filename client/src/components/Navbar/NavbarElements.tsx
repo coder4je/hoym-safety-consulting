@@ -2,6 +2,10 @@ import styled from "styled-components";
 import { Link as LinkR } from "react-router-dom";
 import { Link as LinkS } from "react-scroll";
 
+interface ToggleProps {
+  toggle?: boolean;
+}
+
 export const Nav = styled.nav`
   background: #000;
   width: 100%
@@ -42,7 +46,7 @@ export const NavLogoIcon = styled(LinkR)``;
 
 export const NavLogoName = styled(LinkR)``;
 
-export const MobileIcon = styled.div`
+export const MobileIcon = styled.div<ToggleProps>`
   display: none;
   @media screen and (max-width: 768px) {
     display: block;

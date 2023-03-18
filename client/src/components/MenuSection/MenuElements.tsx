@@ -57,13 +57,14 @@ export const MenuPlus = styled.span<Props>`
   right: 0.625rem;
   background-color: transparent;
   transition: 1s;
-  transform: ${({ toggle }) => (toggle ? "rotate(45deg)" : "rotate(0)")};
+  transform: ${(toggle: Props) =>
+    toggle.toggle ? "rotate(45deg)" : "rotate(0)"};
 `;
 
 export const Menu = styled.div<Props>`
   ${DefaultContainer}
   z-index: -1;
-  transform: ${({ toggle }) => (toggle ? "scale(1)" : "scale(0.9)")};
+  transform: ${(toggle: Props) => (toggle.toggle ? "scale(1)" : "scale(0.9)")};
 `;
 
 export const MenuItems = styled(Link)<Props>`
@@ -78,28 +79,28 @@ export const MenuItems = styled(Link)<Props>`
   text-decoration: none;
 
   &.showItemOne {
-    transform: ${({ toggle }) =>
-      toggle ? "translateY(-160px)" : "translateY(0)"};
+    transform: ${(toggle: Props) =>
+      toggle.toggle ? "translateY(-160px)" : "translateY(0)"};
   }
   &.showItemTwo {
-    transform: ${({ toggle }) =>
-      toggle ? "translate(140px, -80px)" : "translateY(0)"};
+    transform: ${(toggle: Props) =>
+      toggle.toggle ? "translate(140px, -80px)" : "translateY(0)"};
   }
   &.showItemThree {
-    transform: ${({ toggle }) =>
-      toggle ? "translate(140px, 80px)" : "translateY(0)"};
+    transform: ${(toggle: Props) =>
+      toggle.toggle ? "translate(140px, 80px)" : "translateY(0)"};
   }
   &.showItemFour {
-    transform: ${({ toggle }) =>
-      toggle ? "translateY(160px)" : "translateY(0)"};
+    transform: ${(toggle: Props) =>
+      toggle.toggle ? "translateY(160px)" : "translateY(0)"};
   }
   &.showItemFive {
-    transform: ${({ toggle }) =>
-      toggle ? "translate(-140px, 80px)" : "translateY(0)"};
+    transform: ${(toggle: Props) =>
+      toggle.toggle ? "translate(-140px, 80px)" : "translateY(0)"};
   }
   &.showItemSix {
-    transform: ${({ toggle }) =>
-      toggle ? "translate(-140px, -80px)" : "translateY(0)"};
+    transform: ${(toggle: Props) =>
+      toggle.toggle ? "translate(-140px, -80px)" : "translateY(0)"};
   }
 
   &:before {
